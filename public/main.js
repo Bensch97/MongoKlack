@@ -46,7 +46,7 @@ function fetchMessages() {
             // redraw the user list
             listUsers(data.users);
 
-            // examine all received messages, add those newer than the last one shown
+            // examine all received messages, add those newer than the last one show
             for(let i = 0; i < data.messages.length; i++){ 
                 let msg = data.messages[i];
                 if(msg.timestamp > messages[messages.length-1].timestamp) {
